@@ -23,7 +23,4 @@ RUN set -ex; \
     && apk del --no-network .build-deps \
     && pike --version
 
-COPY docker-entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["docker-entrypoint.sh"]
-
 CMD [ "pike" ]
